@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="bootstrap是我们常用的响应式开发框架，特别是针对移动端页面的开发会有非常有效的帮助。 在bootstrap官方文档中（如下代码），我们很容易通过官方实例知道这里面的第一个button标签中的 研究  data-toggle属性其实就是用来声明这个组件的名称叫什么，collapse就是手风琴折叠效果的一个组件。 当你申明了这个属性，其实就相当于告诉了Bootstrap需要初始化这个组件，并且">
+<meta name="description" content="bootstrap是我们常用的响应式开发框架，特别是针对移动端页面的开发会有非常有效的帮助。 如果你需要做一个网页的导航栏，而且这个导航栏要适配PC、移动端等页面，以下的collapse是个不错的选择。 在bootstrap官方文档中（如下代码），我们很容易通过官方实例学习里面的功能。 研究成果  data-toggle属性其实就是用来声明这个组件的名称叫什么，collapse就是手风琴折叠效果的">
 <meta name="keywords" content="Bootstrap,HTML,JS,CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Bootstrap学习笔记-01篇初识导航条和collaps">
 <meta property="og:url" content="http://yoursite.com/2017/07/24/post/index.html">
 <meta property="og:site_name" content="Denny&#39;s Code">
-<meta property="og:description" content="bootstrap是我们常用的响应式开发框架，特别是针对移动端页面的开发会有非常有效的帮助。 在bootstrap官方文档中（如下代码），我们很容易通过官方实例知道这里面的第一个button标签中的 研究  data-toggle属性其实就是用来声明这个组件的名称叫什么，collapse就是手风琴折叠效果的一个组件。 当你申明了这个属性，其实就相当于告诉了Bootstrap需要初始化这个组件，并且">
-<meta property="og:updated_time" content="2017-07-24T06:58:56.708Z">
+<meta property="og:description" content="bootstrap是我们常用的响应式开发框架，特别是针对移动端页面的开发会有非常有效的帮助。 如果你需要做一个网页的导航栏，而且这个导航栏要适配PC、移动端等页面，以下的collapse是个不错的选择。 在bootstrap官方文档中（如下代码），我们很容易通过官方实例学习里面的功能。 研究成果  data-toggle属性其实就是用来声明这个组件的名称叫什么，collapse就是手风琴折叠效果的">
+<meta property="og:updated_time" content="2017-07-24T07:13:49.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bootstrap学习笔记-01篇初识导航条和collaps">
-<meta name="twitter:description" content="bootstrap是我们常用的响应式开发框架，特别是针对移动端页面的开发会有非常有效的帮助。 在bootstrap官方文档中（如下代码），我们很容易通过官方实例知道这里面的第一个button标签中的 研究  data-toggle属性其实就是用来声明这个组件的名称叫什么，collapse就是手风琴折叠效果的一个组件。 当你申明了这个属性，其实就相当于告诉了Bootstrap需要初始化这个组件，并且">
+<meta name="twitter:description" content="bootstrap是我们常用的响应式开发框架，特别是针对移动端页面的开发会有非常有效的帮助。 如果你需要做一个网页的导航栏，而且这个导航栏要适配PC、移动端等页面，以下的collapse是个不错的选择。 在bootstrap官方文档中（如下代码），我们很容易通过官方实例学习里面的功能。 研究成果  data-toggle属性其实就是用来声明这个组件的名称叫什么，collapse就是手风琴折叠效果的">
 
 
 
@@ -341,8 +341,9 @@
 
       
         <p>bootstrap是我们常用的响应式开发框架，特别是针对移动端页面的开发会有非常有效的帮助。</p>
-<p>在bootstrap官方文档中（如下代码），我们很容易通过官方实例知道这里面的第一个button标签中的</p>
-<h4 id="研究"><a href="#研究" class="headerlink" title="研究"></a>研究</h4><blockquote>
+<p>如果你需要做一个网页的导航栏，而且这个导航栏要适配PC、移动端等页面，以下的collapse是个不错的选择。</p>
+<p>在bootstrap官方文档中（如下代码），我们很容易通过官方实例学习里面的功能。</p>
+<h3 id="研究成果"><a href="#研究成果" class="headerlink" title="研究成果"></a>研究成果</h3><blockquote>
 <ol>
 <li>data-toggle属性其实就是用来声明这个组件的名称叫什么，collapse就是手风琴折叠效果的一个组件。</li>
 <li>当你申明了这个属性，其实就相当于告诉了Bootstrap需要初始化这个组件，并且加上JS效果。</li>
@@ -350,9 +351,8 @@
 <li>例如示例中的<code>&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;</code></li>
 </ol>
 </blockquote>
-<p><code>&lt;nav class=&quot;navbar navbar-default&quot;&gt;
-   &lt;div class=&quot;container-fluid&quot;&gt;
-    &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+<pre><code>    &lt;nav class=&quot;navbar navbar-default&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
     &lt;div class=&quot;navbar-header&quot;&gt;
       &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot; aria-expanded=&quot;false&quot;&gt;
         &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
@@ -361,8 +361,49 @@
         &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
       &lt;/button&gt;
       &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand&lt;/a&gt;
-    &lt;/div&gt;</code><br>    <!-- Collect the nav links, forms, and other content for toggling --><br>    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><br>      <ul class="nav navbar-nav"><br>        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li><br>        <li><a href="#">Link</a></li><br>        <li class="dropdown"><br>          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<br>          <span class="caret"></span></a><br>          <ul class="dropdown-menu"><br>            <li><a href="#">Action</a></li><br>            <li><a href="#">Another action</a></li><br>            <li><a href="#">Something else here</a></li><br>            <li role="separator" class="divider"></li><br>            <li><a href="#">Separated link</a></li><br>            <li role="separator" class="divider"></li><br>            <li><a href="#">One more separated link</a></li><br>          </ul><br>        </li><br>      </ul><br>      <form class="navbar-form navbar-left"><br>        <div class="form-group"><br>          <input type="text" class="form-control" placeholder="Search"><br>        </div><br>        <button type="submit" class="btn btn-default">Submit</button><br>      </form><br>      <ul class="nav navbar-nav navbar-right"><br>        <li><a href="#">Link</a></li><br>        <li class="dropdown"><br>          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a><br>          <ul class="dropdown-menu"><br>            <li><a href="#">Action</a></li><br>            <li><a href="#">Another action</a></li><br>            <li><a href="#">Something else here</a></li><br>            <li role="separator" class="divider"></li><br>            <li><a href="#">Separated link</a></li><br>          </ul><br>        </li><br>      </ul><br>    </div><!-- /.navbar-collapse --><br>  <!-- /.container-fluid --><br>`</p>
+    &lt;/div&gt;
 
+&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+&lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+  &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;form class=&quot;navbar-form navbar-left&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+    &lt;/div&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
+  &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+&lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt;`
+</code></pre>
       
     </div>
 
@@ -548,7 +589,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#研究"><span class="nav-number">1.</span> <span class="nav-text">研究</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#研究成果"><span class="nav-number">1.</span> <span class="nav-text">研究成果</span></a></li></ol></div>
             
 
           </div>
