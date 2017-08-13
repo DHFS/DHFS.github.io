@@ -340,51 +340,15 @@
 
       
         
-          
-            <p>拷贝：意思就是将目标完全复制一份。<br>尽管JavaScript是一门弱类型语言，但是存在着基本类型和引用类型，所以也导致JS中存在着浅拷贝(shallow copy)和深拷贝(deep copy)。</p>
-<p>例如：JavaScript中String Boolean Number这些基本类型是值传递,对象则是引用传递</p>
-<pre><code>值传递：
-var a = 123;
-var b = a;
-b = 666;
-console.log(a);//123
-console.log(b);//666
-
-引用传递：
-
-
-function clone(obj){
-        var o={};
-
-            for(var k in obj){
-                o[k]=obj[k]    ;
-        }
-        return o;
-    }
-
-var p={
-    name:&apos;jim&apos;,
-    car:{
-        name:&apos;lexus&apos;,
-    }
-
-};
-
-var p1=clone(p);
-
-console.log(&quot;p.name:&quot;+p.name+&quot;,p.car.name:&quot;+p.car.name);  //输出 p.name:jim,p.car,name:lexus
-console.log(&quot;p1.name:&quot;+p1.name+&quot;,p.car.name:&quot;+p1.car.name);//输出 p1.name:jim,p1.car,name:lexus
-
-console.log(&quot;----------------------------------------------------&quot;);
-p1.name=&apos;tom&apos;;
-p1.car.name=&apos;honda&apos;;
-
-console.log(&quot;p.name:&quot;+p.name+&quot;,p.car.name:&quot;+p.car.name);//输出 p.name:jim,p.car.name:honda
-console.log(&quot;p1.name:&quot;+p1.name+&quot;,p.car.name:&quot;+p1.car.name);//输出 p1.name:tom,p.car.name:honda
-</code></pre><p>从上面的两个例子我们很容易看出，当我们在做拷贝的时候，基本类型将栈中的地址值就行了复制，没有开辟新的栈，所以内存中只有一个地址值。就如例子中，p和p1指向的就是同一个地址，所以p中的name的地址和p1中name的地址一致，修改任一一个对象的内容另一个对象的内容已将发生改变，打印出来的结果仍然是jim。</p>
-<p>而深复制则是开辟新的栈，两个对象对应两个不同的地址，修改一个对象的属性，不会改变另一个对象的属性。</p>
-
-          
+          <p>拷贝：意思就是将目标完全复制一份。<br>尽管JavaScript是一门弱类型语言，但是存在着基本类型和引用类型，所以也导致JS中存在着浅拷贝(shallow copy)和深拷贝(deep copy)。</p>
+<p>例如：JavaScript中String Boolean Number这些基本类型是值传递,对象则是引用传递<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/14/jscopy/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
