@@ -264,6 +264,177 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/19/page20171019google/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Denny Ou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/0.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Denny's Code">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/19/page20171019google/" itemprop="url">解决Hexo博客向谷歌提交站点地图报错问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-19T09:59:17+08:00">
+                2017-10-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端学习/" itemprop="url" rel="index">
+                    <span itemprop="name">前端学习</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端学习/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>昨天需要向Google提交站点地图，目的是为了让Google收录我的博客，方便被搜索到。在各个注册，验证网站结束之后就差提交sitemap.xml的时候出了问题。</p>
+<p>Google Search Console 在我提交了站点地图之后报了10多个网站错误，提示信息显示 “不允许的网址”，然后我看了Google的官方解决方法如下图：</p>
+<p><img src="http://oxz4ag2ph.bkt.clouddn.com/17-10-19/19105635.jpg" alt=""></p>
+<p>我多次反复确认我的网站提交信息没有错误之后在网上也找了很多资料，但是始终报错。</p>
+<p>我开始担心hexo 在编译的过程中会不会把验证文件或者sitemap文件修改了导致错误，后来在GitHub上比较了提交前</p>
+<p>后的代码发现并没有变化。</p>
+<p>后来参考了一篇博文 <a href="http://orchidflower.oschina.io/2017/02/14/submit-to-search-engine/" target="_blank" rel="external">Hexo博客提交搜索引擎</a></p>
+<p>  修改了 node_modules/hexo-generator-sitemap/sitemap.xml 如下：</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;urlset xmlns=&quot;http://dhfs.github.io/schemas/sitemap/0.9&quot;&gt;
+  {% for post in posts %}
+      <url>
+        <loc>{{ (config.urlforgoogle+post.path) | uriencode }}</loc>
+        {% if post.updated %}
+        <lastmod>{{ post.updated.toISOString() }}</lastmod>
+        {% elif post.date %}
+        <lastmod>{{ post.date.toISOString() }}</lastmod>
+        {% endif %}
+      </url>
+      {% endfor %}
+&lt;/urlset&gt;
+</code></pre><p>   <code>(config.urlforgoogle+post.path)</code>中的urlforgoogle可以随便定义只要在网站配置文件<code>_config.yml</code>配置</p>
+<p>   对应的网址就可以 </p>
+<pre><code>urlforgoogle: http://dhfs.github.io/
+sitemap:
+  path: sitemap.xml
+</code></pre><p>重新部署提交，再回到Google 提交网站地图，错误结局！</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/18/note20171018/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1201,7 +1372,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1223,7 +1394,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index-1.html">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

@@ -3,6 +3,35 @@
 
 
     
+  <url>
+    <loc>http://yoursite.com/2017/10/19/page20171019google/</loc>
+    <lastmod>2017-10-19T02:31:13.594Z</lastmod>
+    <data>
+        <display>
+        <title>解决Hexo博客向谷歌提交站点地图报错问题</title>
+        <pubTime>2017-10-19T01:59:17.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>git</tag>
+         
+        <tag>google</tag>
+         
+        <tag>站点地图</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端学习" url="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="web" url="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://yoursite.com/2017/08/14/jscopy/</loc>
