@@ -365,14 +365,14 @@
       
         
           
-            <p>昨天需要向Google提交站点地图，目的是为了让Google收录我的博客，方便被搜索到。在各个注册，验证网站结束之后就差提交sitemap.xml的时候出了问题。</p>
+            <p>昨天需要向Google提交站点地图，目的是为了让Google收录我的博客，方便被搜索到。在经过注册，验证网站等一番努力结束之后就差提交sitemap.xml了，这时候出了问题。</p>
 <p>Google Search Console 在我提交了站点地图之后报了10多个网站错误，提示信息显示 “不允许的网址”，然后我看了Google的官方解决方法如下图：</p>
 <p><img src="http://oxz4ag2ph.bkt.clouddn.com/17-10-19/19105635.jpg" alt=""></p>
 <p>我多次反复确认我的网站提交信息没有错误之后在网上也找了很多资料，但是始终报错。</p>
 <p>我开始担心hexo 在编译的过程中会不会把验证文件或者sitemap文件修改了导致错误，后来在GitHub上比较了提交前</p>
 <p>后的代码发现并没有变化。</p>
 <p>后来参考了一篇博文 <a href="http://orchidflower.oschina.io/2017/02/14/submit-to-search-engine/" target="_blank" rel="external">Hexo博客提交搜索引擎</a></p>
-<p>  修改了 node_modules/hexo-generator-sitemap/sitemap.xml 如下：</p>
+<p>  修改了<code>node_modules/hexo-generator-sitemap/sitemap.xml</code> 如下：</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;urlset xmlns=&quot;http://dhfs.github.io/schemas/sitemap/0.9&quot;&gt;
   {% for post in posts %}
@@ -386,12 +386,11 @@
       </url>
       {% endfor %}
 &lt;/urlset&gt;
-</code></pre><p>   <code>(config.urlforgoogle+post.path)</code>中的urlforgoogle可以随便定义只要在网站配置文件<code>_config.yml</code>配置</p>
-<p>   对应的网址就可以 </p>
+</code></pre><p>   <code>(config.urlforgoogle+post.path)</code>中的urlforgoogle可以随便定义<br>   只要在网站配置文件<code>_config.yml</code>配置对应的地址就可以 </p>
 <pre><code>urlforgoogle: http://dhfs.github.io/
 sitemap:
   path: sitemap.xml
-</code></pre><p>重新部署提交，再回到Google 提交网站地图，错误结局！</p>
+</code></pre><p>重新部署提交，再回到Google 提交网站地图，问题解决！</p>
 
           
         
