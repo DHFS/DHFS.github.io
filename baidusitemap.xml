@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yoursite.com/2017/10/21/note20171020/</loc>
-    <lastmod>2017-10-20T16:22:32.478Z</lastmod>
+    <lastmod>2017-10-20T16:25:01.237Z</lastmod>
     <data>
         <display>
         <title>Vue常用系统指令</title>
@@ -110,11 +110,11 @@
         <title>解决chrome移动端调试模式无法显示鼠标指针问题</title>
         <pubTime>2017-10-17T14:49:11.000Z</pubTime>
         
+        <tag>web</tag>
+         
         <tag>chrome</tag>
          
         <tag>调试</tag>
-         
-        <tag>web</tag>
          
          
            
@@ -190,11 +190,11 @@
         <title>正儿八经的写一篇博文</title>
         <pubTime>2017-07-17T08:27:04.000Z</pubTime>
         
-        <tag>web</tag>
-         
         <tag>hexo</tag>
          
         <tag>node.js</tag>
+         
+        <tag>web</tag>
          
          
            
