@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yoursite.com/2017/10/21/note20171020/</loc>
-    <lastmod>2017-10-20T16:25:01.237Z</lastmod>
+    <lastmod>2017-10-20T16:26:02.147Z</lastmod>
     <data>
         <display>
         <title>Vue常用系统指令</title>
@@ -137,9 +137,9 @@
         <title>博客初始</title>
         <pubTime>2017-07-17T07:03:30.000Z</pubTime>
         
-        <tag>hexo</tag>
-         
         <tag>node.js</tag>
+         
+        <tag>hexo</tag>
          
         <tag>markdown</tag>
          
@@ -190,9 +190,9 @@
         <title>正儿八经的写一篇博文</title>
         <pubTime>2017-07-17T08:27:04.000Z</pubTime>
         
-        <tag>hexo</tag>
-         
         <tag>node.js</tag>
+         
+        <tag>hexo</tag>
          
         <tag>web</tag>
          
