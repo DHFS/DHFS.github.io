@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/10/22/page20171022/</loc>
+    <lastmod>2017-10-22T03:41:21.037Z</lastmod>
+    <data>
+        <display>
+        <title>一些好看的插图</title>
+        <pubTime>2017-10-22T03:34:41.000Z</pubTime>
+        
+        <tag>手绘插画</tag>
+         
+         
+           
+             
+              <breadCrumb title="闲话" url="http://yoursite.com/categories/%E9%97%B2%E8%AF%9D/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/10/21/note20171020/</loc>
     <lastmod>2017-10-21T01:19:55.514Z</lastmod>
     <data>
@@ -139,9 +159,9 @@
         <title>博客初始</title>
         <pubTime>2017-07-17T07:03:30.000Z</pubTime>
         
-        <tag>node.js</tag>
-         
         <tag>hexo</tag>
+         
+        <tag>node.js</tag>
          
         <tag>markdown</tag>
          
@@ -192,9 +212,9 @@
         <title>正儿八经的写一篇博文</title>
         <pubTime>2017-07-17T08:27:04.000Z</pubTime>
         
-        <tag>node.js</tag>
-         
         <tag>hexo</tag>
+         
+        <tag>node.js</tag>
          
         <tag>web</tag>
          
