@@ -4,6 +4,31 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/10/18/note20171018/</loc>
+    <lastmod>2017-10-23T15:32:11.459Z</lastmod>
+    <data>
+        <display>
+        <title>git上手小记</title>
+        <pubTime>2017-10-18T11:09:14.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端学习" url="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+          
+             
+              <breadCrumb title="web" url="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/10/22/page20171022/</loc>
     <lastmod>2017-10-22T03:41:21.037Z</lastmod>
     <data>
@@ -98,31 +123,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://yoursite.com/2017/10/18/note20171018/</loc>
-    <lastmod>2017-10-18T11:59:34.435Z</lastmod>
-    <data>
-        <display>
-        <title>git上手小记</title>
-        <pubTime>2017-10-18T11:09:14.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-        <tag>github</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端学习" url="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
-          
-             
-              <breadCrumb title="web" url="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/web/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://yoursite.com/2017/10/17/note20171017/</loc>
